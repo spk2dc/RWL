@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b43DYLWJTUirrW6Le5XsbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://forms.rwlibrary.ca/Request-Form" DesignTimeRectangle="570, 695, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT Q_90a15ee6-0ff3-4…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your library card number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your library card number' /&gt;" Guid="b2b2206a-798f-41d5-bc5d-5dc4a06efe62" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="570, 657, 352, 32" ElementType="Text" FriendlyName="'Please enter'" FullSelectorArgument="&lt;webctrl aaname='Please enter your library card number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Please enter your library card number' tag='LABEL' check:text='Please enter your library card number' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0b07babcb551778494d02dbd1eec41f4.png" xmlns="">0cBD77JZHm0uP0g-QoUC9VQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

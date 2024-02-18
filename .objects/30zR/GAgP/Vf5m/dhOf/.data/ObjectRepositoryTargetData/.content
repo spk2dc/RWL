@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IezNKHTzT0arSRn9xMwyjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://forms.rwlibrary.ca/Request-Form" DesignTimeRectangle="570, 571, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT Q_b1055eb3-2622-4…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your full name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your full name' /&gt;" Guid="361ad92a-e518-4a21-8393-e916e41e5dab" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="570, 532, 260, 32" ElementType="Text" FriendlyName="'Please enter'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Please enter your full name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Please enter your full name' check:text='Please enter your full name' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6712c657148339fa5ba7f9673cbcb1c9.png" xmlns="">0oE8UZ-L640i1EqDHOUcUAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

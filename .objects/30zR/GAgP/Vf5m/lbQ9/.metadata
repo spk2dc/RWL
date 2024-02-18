@@ -1,0 +1,16 @@
+﻿{
+  "Name": "branch",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "lbQ9s6H2pUCKu2wbtdf8vQ",
+  "Reference": "C97fH37pGUm3-pIPkmlBKg/lbQ9s6H2pUCKu2wbtdf8vQ",
+  "ParentRef": "C97fH37pGUm3-pIPkmlBKg/Vf5ma9SikkegRzm2jB_fFQ",
+  "Created": "2024-02-18T02:01:52.5500233Z",
+  "Updated": "2024-02-18T02:03:59.0919453Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

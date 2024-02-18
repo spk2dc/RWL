@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aa9CMzKzL0-IDK2W-v7OGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://forms.rwlibrary.ca/Request-Form" DesignTimeRectangle="570, 729, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT Q_96df40d1-3cb7-4…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Author' type='text' class='form-control' /&gt;" Guid="05e566c5-ebf0-4d15-9b38-d3549daab223" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="570, 690, 61, 32" ElementType="Text" FriendlyName="'Author'" FullSelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' type='' check:text='Author' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9dbef13c1c9fa6a41e955729f4976852.png" xmlns="">0n1LG1X1yEEmuTr8WCboVyQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Cav1QBNyEkqq7Q3YQondDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://forms.rwlibrary.ca/Request-Form" DesignTimeRectangle="1644, 982, 113, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='                                                 Submit         *' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                 Submit         *' tag='BUTTON' type='submit' check:text='Submit' /&gt;" Guid="c48dace9-5ea1-47c5-b275-87a75b2ddf8e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="db65e9a19f2b38994d77962da28063da.png" xmlns="">0HyzgL8CKI0e_7u_ghng_AA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

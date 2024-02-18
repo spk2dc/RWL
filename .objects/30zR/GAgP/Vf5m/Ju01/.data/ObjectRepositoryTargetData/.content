@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Qc3k2z2Lf0CIRo6GFx4Tig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://forms.rwlibrary.ca/Request-Form" DesignTimeRectangle="570, 624, 1187, 217" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA Q_64df8703-a29…'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Additional Details: Please add any information you feel is relevant.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Additional Details: Please add any information you feel is relevant.' /&gt;" Guid="cfd1cf55-d03a-4236-ae90-6cff294f6ba4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="570, 585, 596, 32" ElementType="Text" FriendlyName="'Additional Details:'" FullSelectorArgument="&lt;webctrl aaname='Additional Details: Please add any information you feel is relev*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Additional Details: Please add any information you feel is relev*' tag='LABEL' check:text='Additional Details: Please add any information you feel is relevant.' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="06a15b8c83c5fedb905aa38e97db9c2f.png" xmlns="">0tfzUNGNybUyQGY2pDXFleA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

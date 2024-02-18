@@ -1,0 +1,294 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,3820</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RWL" sap:VirtualizedContainerService.HintSize="668.8,3755.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="author" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606.4,3643.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="15" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572.8,3455.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="529.6,3183.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2966.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="year" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[year]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(1).Split(",")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="IezNKHTzT0arSRn9xMwyjQ" DesignTimeRectangle="570, 571, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your full name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your full name' /&gt;" Guid="361ad92a-e518-4a21-8393-e916e41e5dab" InformativeScreenshot="6712c657148339fa5ba7f9673cbcb1c9.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/dhOfEXEqAEuBPtTLFzoaZw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 532, 260, 32" ElementType="Text" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Please enter your full name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Please enter your full name' check:text='Please enter your full name' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="26501001041257" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="b43DYLWJTUirrW6Le5XsbQ" DesignTimeRectangle="570, 695, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your library card number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your library card number' /&gt;" Guid="b2b2206a-798f-41d5-bc5d-5dc4a06efe62" InformativeScreenshot="0b07babcb551778494d02dbd1eec41f4.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/XMGUZdDtyUeDWK3OLfKonQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 657, 352, 32" ElementType="Text" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl aaname='Please enter your library card number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Please enter your library card number' tag='LABEL' check:text='Please enter your library card number' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="5712507368" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="RMnZOovqZEWpYijJmY7q7g" DesignTimeRectangle="570, 775, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'phone'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your phone number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your phone number' /&gt;" Guid="51547f60-38b8-4c1d-9e0d-93025d3ca17c" InformativeScreenshot="4bdfbfb48bd7b30ea10154e69c124621.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/tjuVTXPJvkmt9RTm7XtvGw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 737, 306, 32" ElementType="Text" FriendlyName="'phone'" FullSelectorArgument="&lt;webctrl aaname='Please enter your phone number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Please enter your phone number' tag='LABEL' check:text='Please enter your phone number' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="bionicle0107@yahoo.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="U9qQ6k8hJ0O29y4DIxeeyA" DesignTimeRectangle="570, 636, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your email address' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Please enter your email address' /&gt;" Guid="dedca70c-af6e-4b54-9f1a-87cc548336fe" InformativeScreenshot="6c708f3fa0ae8b2de665f2c53e0b4b79.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/189EGtjqEke1ZD2Q2IwIIw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 597, 289, 32" ElementType="Text" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl aaname='Please enter your email address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Please enter your email address' tag='LABEL' check:text='Please enter your email address' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'contact'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="rDA6nTCZQky60CQImAxCrw" DesignTimeRectangle="1182, 522, 73, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'contact'" FullSelectorArgument="&lt;webctrl aaname='                                                          Email *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                          Email *' tag='LABEL' type='' class='' check:text='unchecked' /&gt;" Guid="69e112da-a796-4409-9072-c022dd5ebac4" InformativeScreenshot="4b00c116e298e9e6dcddf70e8e78f22c.png" Reference="C97fH37pGUm3-pIPkmlBKg/VMwhW0lCLUGXZ1LV-Tp7mQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 522, 80, 32" ElementType="Text" FriendlyName="'contact'" FullSelectorArgument="&lt;webctrl aaname='                                                          Phone *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                          Phone *' tag='LABEL' check:text='unchecked' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="4Sd2vRJZHUGwnrQGhK8ouw" DesignTimeRectangle="570, 604, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Title' /&gt;" Guid="b8167dd2-8bec-4b30-a7b2-e2e426481a1f" InformativeScreenshot="b62c5a32ab36c85c8551d3c62c6f38be.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/JKQYzkcw1kaZ91BTAI411Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 565, 55, 32" ElementType="Text" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' check:text='Title' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[author]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="aa9CMzKzL0-IDK2W-v7OGQ" DesignTimeRectangle="570, 729, 1187, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Author' type='text' class='form-control' /&gt;" Guid="05e566c5-ebf0-4d15-9b38-d3549daab223" InformativeScreenshot="9dbef13c1c9fa6a41e955729f4976852.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/DF8T5GaKXkCF_b1qhyXNcA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 690, 61, 32" ElementType="Text" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' type='' check:text='Author' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'branch'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="4f1jCKFqKkuYD0q2GCwGYg" DesignTimeRectangle="978, 779, 211, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='                                                          Library Headquarters                         ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='                                                          Library Headquarters                         ' check:text='unchecked' /&gt;" Guid="0fbf7d79-cba1-4dbb-9daa-2194f269709d" InformativeScreenshot="ae06b3e1a717faa885c6f0796dc67cd5.png" Reference="C97fH37pGUm3-pIPkmlBKg/lbQ9s6H2pUCKu2wbtdf8vQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 779, 147, 32" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='                                                          Baden *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                          Baden *' tag='LABEL' check:text='unchecked' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'additional info'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_32" Text="format: eAudiobook on Libby" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="Qc3k2z2Lf0CIRo6GFx4Tig" DesignTimeRectangle="570, 624, 1187, 217" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA Q_64df8703-a29…'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Additional Details: Please add any information you feel is relevant.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' aaname='Additional Details: Please add any information you feel is relevant.' /&gt;" Guid="cfd1cf55-d03a-4236-ae90-6cff294f6ba4" InformativeScreenshot="06a15b8c83c5fedb905aa38e97db9c2f.png" IsResponsive="True" Reference="C97fH37pGUm3-pIPkmlBKg/Ju01DXmvS0qIbF3VKCErRg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="570, 585, 596, 32" ElementType="Text" FriendlyName="'Additional Details:'" FullSelectorArgument="&lt;webctrl aaname='Additional Details: Please add any information you feel is relev*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Additional Details: Please add any information you feel is relev*' tag='LABEL' check:text='Additional Details: Please add any information you feel is relevant.' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://forms.rwlibrary.ca/Request-Form" ContentHash="Cav1QBNyEkqq7Q3YQondDA" DesignTimeRectangle="1644, 982, 113, 57" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl aaname='                                                 Submit         *' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                 Submit         *' tag='BUTTON' type='submit' check:text='Submit' /&gt;" Guid="c48dace9-5ea1-47c5-b275-87a75b2ddf8e" InformativeScreenshot="db65e9a19f2b38994d77962da28063da.png" Reference="C97fH37pGUm3-pIPkmlBKg/cbuqKhe6Y0uEkmugu9zLZA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://forms.rwlibrary.ca/Request-Form" Version="V3" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="mw9KGxb1VEagR7TYSadyUA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASoSURBVFhHxVddTFxFFCalLya+aIyJffHNRB7UF9qamCiaWJs02misD5hoQ6pWasKKJQabxtLaxtJYrdDa1qY2NbWU0KJYsMtvAVlhocAK290tXZZlWbq4wP4C+8fnOcO923uXG6Ao2S/5kt2ZM3O+mTnnzNyMLQXbliWA9cSniXuIVUQbMUBMSOTf3MZ9bMO267XmSqVmo0yaJJO4iXiKOEyMEZcD27Atj+GxmVpzy9RsZNLADcSjxAniasFjeY4NWj6Ymo00IJvYSpwn/lfwHDxXtpavRQ1kmEO0Ev9v8Jw5qf5Uf8hgo2S4VuC5Nyp9Kp3zmfNWrTXYRzImZOfriBwsmApH0e8KIBrn7FozsK91SgGbiR7u6SPnTx1oxc6LJhhHfIgnVh+HkUQUdwJO/Dragt9GbyIcm5V6hK/NQgD94FznnBVgAY/ubUDGh9fxWFEDiqotcE4lB64Is/E5NN8zosBYihf1eXju93fw1s1CjIVVGc0+M1lAFtHOLQwhgBy//kMP3v6xF49/3ohnD7ej8tY4HcvSu8G9A9ND0HUfQ45+F3Lbi1E6eAE1tHp70EX9qvHsM4sFcOlMVjh5B063OzFP9vz/s6sWZB1sg67qNu4FIpKlGrzdlQ49drQWYX/fSXR5BxCKzUi9mmCfe1gA1+8klAJkcBgMuIP45IoZuT/1iyBVgh2VWyuwt+c4uifNiM/HRTufOQspt1SgzHIZ/mhItCtQxQJUea8lQEaMlLTYJrGvxgaDfVq0sfOzd67iwt0aBKLhZNt1VxvyOr7Eptp38UzNDmxv0cEVFnGuhJUFqJazlAAZvpkYGq1eDE+GoXcb0Oq5RbuUEOQV53cewWuNH+Ojvw7hpPWKsBExwGeqRoAFqBJ+JQIYfCyhSAzeOZ8IrulIAGdsVdjd+RXODVWL9Ism7l+eGs4ZiVULUIKdHTf/jMuOGyRo4Wh4N0ZC46gaacAXvWUo7v0entlJ0aeAEPDAR6CEadqGS8N1cITc4j875lQsMZ3Bqw27kV2bixf+2In3/9yvFQPiCFYchKmIk7O7wVHMUOFhjM/8g2/MF/FGsw55hgM4Za1Em6dXnL8coCkQQbgoDR8hAd81O6SW5cGrbqNA1BmP4euB8+ibsoq6wGDHFr8DZp9dFRMSRBouLkSF9XhyXzPyKwahv+1FYG7RwCS47F5zNuGE5RdyNCwCkvOfM6PEdBpvthTi+br3sLUxX+yWAjypKESqUjwRjKDomgXZRzvw8Kd6PFSgx0vfduKS0Q3/rFoIO2uf6BWr59XN0apvuDuwy1CCl+s/wHY6ivyuIzj89zlUO5uTRyUhWYpVlxGDE4ZzvdPhQ2m9Ha+c6MITxU3YUmYUO8IFacFuXuwAwx4cwyHTWVEDOA35GCYjfrJdqIoaWLiMUq9jLcxE4+hx+lFSO4St5d04WDeUvBNYRLd3UKRhE92Ay9R/GfevY0lA8kGyHLyhKKr7PThvcMHtmxNpWDvWDl80KFmsCOoHiSTigZ5k4UicxETgptTTiO6lsPhJphCRvkepTDJI37NcJhmm78NEJg1I36eZTBqYvo9TJWmSNfo835bxL0BFPKjkef1OAAAAAElFTkSuQmCC" InformativeScreenshot="18a87e7fbc562e8c648004c0ec75120e.jpg" Reference="C97fH37pGUm3-pIPkmlBKg/Vf5ma9SikkegRzm2jB_fFQ" Selector="&lt;html app='chrome.exe' title='Request Form - Region of Waterloo Library' /&gt;" Title="Request Form - Region of Waterloo Library" Url="https://forms.rwlibrary.ca/Request-Form" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
